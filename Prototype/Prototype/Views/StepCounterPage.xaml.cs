@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace Prototype.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StepCounter : ContentPage
-    {
-        public StepCounter()
-        {
-            InitializeComponent();
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class StepCounterPage : ContentPage
+	{
+		public StepCounterPage ()
+		{
+			InitializeComponent ();
 
             Label descriptionLabel = new Label
             {
@@ -41,5 +41,5 @@ namespace Prototype.Views
                 BackgroundColor = Color.White
             };
         }
-    }
+	}
 }

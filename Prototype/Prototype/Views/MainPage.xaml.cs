@@ -15,9 +15,16 @@ namespace Prototype.Views
         {
             InitializeComponent();
 
+            LoginAsync();
+
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.DizzinessRegister, (NavigationPage)Detail);
+        }
+
+        private async Task LoginAsync()
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new LoginPage()));
         }
 
         public async Task NavigateFromMenu(int id)
@@ -26,11 +33,14 @@ namespace Prototype.Views
             {
                 switch (id)
                 {
+                    case (int)MenuItemType.DizzinessRegister:
+                        MenuPages.Add(id, new NavigationPage(new DizzinessRegisterPage()));
+                        break;
                     case (int)MenuItemType.Browse:
                         MenuPages.Add(id, new NavigationPage(new ItemsPage()));
                         break;
-                    case (int)MenuItemType.About:
-                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                    case (int)MenuItemType.StepCounter:
+                        MenuPages.Add(id, new NavigationPage(new StepCounterPage()));
                         break;
                 }
             }

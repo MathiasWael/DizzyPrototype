@@ -7,7 +7,8 @@ namespace Prototype.Models
     public enum MenuItemType
     {
         Browse,
-        About
+        StepCounter,
+        DizzinessRegister
     }
     public class HomeMenuItem
     {
