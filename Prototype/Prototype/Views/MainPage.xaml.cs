@@ -42,6 +42,9 @@ namespace Prototype.Views
                     case (int)MenuItemType.StepCounter:
                         MenuPages.Add(id, new NavigationPage(new StepCounterPage()));
                         break;
+                    case (int)MenuItemType.Journal:
+                        MenuPages.Add(id, new NavigationPage(new JournalPage()));
+                        break;
                 }
             }
 

@@ -8,7 +8,8 @@ namespace Prototype.Models
     {
         Browse,
         StepCounter,
-        DizzinessRegister
+        DizzinessRegister,
+        Journal
     }
     public class HomeMenuItem
     {

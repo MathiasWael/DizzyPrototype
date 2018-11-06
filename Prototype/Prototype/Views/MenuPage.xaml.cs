@@ -21,6 +21,7 @@ namespace Prototype.Views
                 new HomeMenuItem {Id = MenuItemType.DizzinessRegister, Title="Register Dizziness"},
                 new HomeMenuItem {Id = MenuItemType.StepCounter, Title="Step Counter"},
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
+                new HomeMenuItem {Id = MenuItemType.Journal, Title="Journal" },
             };
 
             ListViewMenu.ItemsSource = menuItems;
