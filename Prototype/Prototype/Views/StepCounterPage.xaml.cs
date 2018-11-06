@@ -34,12 +34,32 @@ namespace Prototype.Views
                 VerticalOptions = LayoutOptions.StartAndExpand
             };
 
+            Button viewGraphButton = new Button
+            {
+                Text = "View Progress",
+                BackgroundColor = Color.FromHex("#6697c1"),
+                BorderColor = Color.White,
+                TextColor = Color.White,
+                CornerRadius = 10,
+                BorderWidth = 1,
+                WidthRequest = 200,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
+
+            viewGraphButton.Pressed += viewGraphButtonPressed;
+
             Content = new StackLayout
             {
-                Children = { descriptionLabel, stepCounterLabel },
+                Children = { descriptionLabel, stepCounterLabel, viewGraphButton },
                 Orientation = StackOrientation.Vertical,
                 BackgroundColor = Color.White
             };
+        }
+
+        async void viewGraphButtonPressed(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new StepCounterGraphPage());
         }
 	}
 }
