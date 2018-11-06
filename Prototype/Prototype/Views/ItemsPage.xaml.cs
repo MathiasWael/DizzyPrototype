@@ -22,6 +22,7 @@ namespace Prototype.Views
         {
             InitializeComponent();
 
+            BindingContext = viewModel = new ItemsViewModel();
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)

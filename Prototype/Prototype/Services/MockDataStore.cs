@@ -15,8 +15,8 @@ namespace Prototype.Services
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Genopret 1", Description="Trin 1: Sid i en komfortabel position. Fokuser på et punkt i øjenhøjde med hovedet let foroverbøjet (ca. 20-30 grader). \n\nTrin 2: Fortsæt med at fokusere på punktet, mens du bevæger hovedet fra side til side. Husk at fokusere på punktet med øjnene, mens du bevæger hovedet!"},
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Genopret 4", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
