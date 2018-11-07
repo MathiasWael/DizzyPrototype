@@ -20,7 +20,7 @@ namespace Prototype.Views
             {
                 Text = "register your dizziness",
                 FontSize = 25,
-                TextColor = Color.FromHex("#6697c1"),
+                TextColor = Color.FromHex(App.Blue),
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.CenterAndExpand
             };
@@ -29,7 +29,7 @@ namespace Prototype.Views
             {
                 Text = "5",
                 FontSize = 125,
-                TextColor = Color.FromHex("#6697c1"),
+                TextColor = Color.FromHex(App.Blue),
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.StartAndExpand
             };
@@ -40,7 +40,7 @@ namespace Prototype.Views
                 Minimum = 0.0f,
                 Value = 5.0f,
 
-                MinimumTrackColor = Color.FromHex("#6697c1"),
+                MinimumTrackColor = Color.FromHex(App.Blue),
                 ThumbColor = Color.FromHex("#ccdcea"),
                 VerticalOptions = LayoutOptions.StartAndExpand
             };
@@ -54,7 +54,7 @@ namespace Prototype.Views
             Button registerButton = new Button
             {
                 Text = "Submit",
-                BackgroundColor = Color.FromHex("#6697c1"),
+                BackgroundColor = Color.FromHex(App.Blue),
                 BorderColor = Color.White,
                 TextColor = Color.White,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
@@ -65,12 +65,31 @@ namespace Prototype.Views
 
             };
 
+            Button viewGraphButton = new Button
+            {
+                Text = "View Progress",
+                BackgroundColor = Color.FromHex(App.Blue),
+                BorderColor = Color.White,
+                TextColor = Color.White,
+                CornerRadius = 10,
+                BorderWidth = 1,
+                WidthRequest = 150,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
+
+            viewGraphButton.Pressed += viewGraphButtonPressed;
+
             Content = new StackLayout
             {
-                Children = { descriptionLabel, dizzyLabel, slider, registerButton },
+                Children = { descriptionLabel, dizzyLabel, slider, registerButton, viewGraphButton },
                 Orientation = StackOrientation.Vertical,
-                BackgroundColor = Color.White
+                BackgroundColor = Color.FromHex(App.Background)
             };
         }
-	}
+        async void viewGraphButtonPressed(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new DizzinessRegisterGraphPage());
+        }
+    }
 }

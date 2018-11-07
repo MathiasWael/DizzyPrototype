@@ -10,15 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Prototype.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class StepCounterGraphPage : ContentPage
+	public partial class DizzinessRegisterGraphPage : ContentPage
 	{
-		public StepCounterGraphPage ()
+		public DizzinessRegisterGraphPage ()
 		{
 			InitializeComponent ();
 
             Image graph = new Image
             {
-                Source= "StepGraph.PNG",
+                Source = "DizzyGraph.PNG",
                 Aspect = Aspect.AspectFit,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.StartAndExpand,

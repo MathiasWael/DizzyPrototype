@@ -8,6 +8,9 @@ namespace Prototype
 {
     public partial class App : Application
     {
+        public static string Blue = "#003865";
+        public static string Background = "#ccd7e0";
+
 
         public App()
         {

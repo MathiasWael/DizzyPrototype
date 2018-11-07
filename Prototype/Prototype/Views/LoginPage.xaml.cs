@@ -19,6 +19,7 @@ namespace Prototype.Views
             Entry usernameEntry = new Entry
             {
                 Placeholder = "Username",
+                WidthRequest = 400,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.EndAndExpand
             };
@@ -26,6 +27,7 @@ namespace Prototype.Views
             Entry passwordEntry = new Entry
             {
                 Placeholder = "Password",
+                WidthRequest = 400,
                 IsPassword = true,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.StartAndExpand,
@@ -34,6 +36,10 @@ namespace Prototype.Views
             Button loginButton = new Button
             {
                 Text = "Login",
+                BackgroundColor = Color.FromHex(App.Blue),
+                TextColor = Color.White,
+                CornerRadius = 10,
+                BorderWidth = 1,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.StartAndExpand,
             };
@@ -47,7 +53,7 @@ namespace Prototype.Views
             {
                 Children = { usernameEntry, passwordEntry, loginButton },
                 Orientation = StackOrientation.Vertical,
-                BackgroundColor = Color.White
+                BackgroundColor = Color.FromHex(App.Background)
             };
         }
 	}
