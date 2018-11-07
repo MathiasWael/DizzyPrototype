@@ -4,6 +4,6 @@
              x:Class="Prototype.Views.ItemDetailPage"
              Title="{Binding Title}">
     <StackLayout Spacing="20" Padding="15" BackgroundColor="#ccd7e0">
-        <Label Text="{Binding Item.Description}" FontSize="Small"/>
+        <Label Text="{Binding Item.Description}" FontSize="Small" TextColor="#194b74"/>
     </StackLayout>
 </ContentPage>
