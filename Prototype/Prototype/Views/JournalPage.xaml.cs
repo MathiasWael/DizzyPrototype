@@ -91,9 +91,10 @@ namespace Prototype.Views
             LaterList.SelectedItem = null;
         }
 
-        private async void ToolbarItem_ClickedAsync(object sender, EventArgs e)
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new JournalAddPage()));
+            await Navigation.PushAsync(new JournalAddPage());
+            //await Navigation.PushModalAsync(new NavigationPage(new JournalAddPage()));
         }
     }
 }

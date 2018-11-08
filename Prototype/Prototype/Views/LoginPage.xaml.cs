@@ -21,7 +21,7 @@ namespace Prototype.Views
                 Placeholder = "Username",
                 WidthRequest = 400,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
-                VerticalOptions = LayoutOptions.EndAndExpand
+                VerticalOptions = LayoutOptions.EndAndExpand,
             };
 
             Entry passwordEntry = new Entry
