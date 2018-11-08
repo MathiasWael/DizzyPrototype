@@ -18,7 +18,7 @@ namespace Prototype.Views
 
             Image graph = new Image
             {
-                Source = "DizzyGraph.PNG",
+                Source = "DizzyGraph4.png",
                 Aspect = Aspect.AspectFit,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.StartAndExpand,
