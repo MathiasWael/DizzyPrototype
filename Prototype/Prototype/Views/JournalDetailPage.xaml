@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prototype.Views.JournalDetailPage"
+             Title="{Binding Title}">
+    <StackLayout Spacing="20" Padding="15" BackgroundColor="#ccd7e0">
+        <Label Text="{Binding JournalEntry.Content}" FontSize="Small" TextColor="#194b74"/>
+    </StackLayout>
+</ContentPage>
