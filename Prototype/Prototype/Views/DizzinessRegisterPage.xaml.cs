@@ -41,7 +41,7 @@ namespace Prototype.Views
                 Value = 5.0f,
 
                 MinimumTrackColor = Color.FromHex(App.Blue),
-                ThumbColor = Color.FromHex("#ccdcea"),
+                ThumbColor = Color.FromHex("#143c5c"),
                 VerticalOptions = LayoutOptions.StartAndExpand
             };
 
